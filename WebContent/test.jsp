@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<!-- 备注 -->
 	<a href="${pageContext.request.contextPath }/_insert">增加</a>
 	<a href="${pageContext.request.contextPath }/_delete">刪除</a>
 	<a href="${pageContext.request.contextPath }/_!update">修改</a>
