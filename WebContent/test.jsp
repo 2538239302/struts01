@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<test>
 	<a href="${pageContext.request.contextPath }/_insert">增加</a>
 	<a href="${pageContext.request.contextPath }/_delete">刪除</a>
 	<a href="${pageContext.request.contextPath }/_!update">修改</a>
