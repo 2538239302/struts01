@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+
+<struts>
+
+	<!-- 打开动态访问 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+
+	<package name="default" extends="struts-default" namespace="/">
+
+		<action name="test" method="a" class="com.yq.demo1.Test"></action>
+
+		<!-- 通配符的访问方式 -->
+		<action name="_*" class="com.yq.demo1.Test" method="{1}"></action>
+
+		<!-- 动态的访问方式 -->
+		<action name="_" class="com.yq.demo1.Test"></action>
+
+		<action name="dispatcher_*" class="com.yq.demo1.TestDispatcher"	method="{1}">
+			<result name="dispatcher">dispatcher2.jsp </result>
+		</action>
+
+		<action name="redirect_*" class="com.yq.demo1.TestRedirect" method="{1}">
+			<result name="redirect" type="redirect">redirect2.jsp </result>
+		</action>
+
+	</package>
+
+
+</struts>
